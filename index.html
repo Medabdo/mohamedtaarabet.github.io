@@ -1,218 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de Mohamed TA | M&E & Data Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Mohamed TAARABET</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8fafc;
-      color: #1f2937;
       line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
     }
 
-    /* ==== HEADER ==== */
     header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      background-color: #0a4d68;
       color: white;
       text-align: center;
-      padding: 4rem 2rem 3rem;
-      position: relative;
+      padding: 40px 20px;
     }
 
     header img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 4px solid #3b82f6;
+      border: 4px solid white;
+      margin-bottom: 20px;
       object-fit: cover;
-      margin-bottom: 1rem;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    h1 {
+      margin: 10px 0;
     }
 
-    header p {
-      font-size: 1.2rem;
-      color: #cbd5e1;
-      margin: 0.3rem 0;
-    }
-
-    /* ==== SECTION ==== */
     section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .separator {
+      height: 8px;
+      background: linear-gradient(to right, #0a4d68, #05bfdb);
+      margin: 40px 0;
+      border-radius: 4px;
     }
 
     h2 {
-      color: #0f172a;
-      border-left: 5px solid #3b82f6;
-      padding-left: 12px;
-    }
-
-    /* ==== COLORED BANDS ==== */
-    .separator {
-      width: 100%;
-      height: 60px;
-      background: linear-gradient(90deg, #3b82f6, #1e40af);
-    }
-
-    /* ==== PROJECTS ==== */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .project {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-    }
-
-    .project a {
-      text-decoration: none;
-      color: #2563eb;
-      font-weight: 600;
-    }
-
-    /* ==== SKILLS ==== */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    .skill {
-      background: #3b82f6;
-      color: white;
-      padding: 0.6rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-
-    /* ==== CONTACT ==== */
-    #contact p {
-      font-size: 1rem;
-      margin: 0.5rem 0;
-    }
-
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
+      color: #0a4d68;
     }
 
     a {
-      color: #2563eb;
+      color: #05bfdb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0a4d68;
+      color: white;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <!-- 🔹 Ajoute ici ta vraie photo de profil -->
-    <img src="https://github.com/Medabdo/mohamedtaarabet.github.io/blob/main/photo_profil.jpg?raw=true" alt="photo_profil.jpg">
-    <h1>Mohamed TA</h1>
-    <p>Monitoring, Evaluation, Learning & Data Analyst</p>
-    <p>Basé à Rabat, Maroc | Passionné par la donnée, l’impact et la visualisation</p>
+    <!-- 🔽 Mets ici ton lien vers ta photo de profil -->
+    <img src="photo_profil.jpg" alt="Photo de profil de Mohamed TA">
+    <h1>Mohamed TAARABET</h1>
+    <p>Analyste en Suivi-Évaluation & Data Analyst</p>
   </header>
-
-  <div class="separator"></div>
 
   <section id="about">
     <h2>À propos</h2>
-    <p>
-      Analyste en Suivi-Évaluation et Data Analyst au sein d’une organisation internationale,
-      je conçois et pilote des systèmes de suivi permettant de transformer la donnée en décisions.
-      Je combine des compétences en analyse (Excel, SQL, Python), en visualisation (Power BI, Tableau, Looker Studio)
-      et en accompagnement stratégique pour renforcer l’efficacité des programmes.
-    </p>
-  </section>
-
-  <div class="separator"></div>
-
-  <section id="projects">
-    <h2>Mes projets</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>📊 Dashboard Power BI – Participation aux événements</h3>
-        <p>Outil de suivi dynamique des participations du personnel aux événements externes, permettant d’identifier les collaborations potentielles et valoriser l’engagement.</p>
-        <a href="#">Voir le projet</a>
-      </div>
-
-      <div class="project">
-        <h3>📈 Suivi des indicateurs – Intervention 1 (Visa)</h3>
-        <p>Modèle Excel pour le suivi des réalisations et la consolidation automatique des indicateurs d’un programme d’inclusion économique.</p>
-        <a href="#">Voir le fichier Excel</a>
-      </div>
-
-      <div class="project">
-        <h3>🗺️ Visualisation géographique des communes</h3>
-        <p>Cartographie Power BI des communes d’intervention avec coordonnées GPS, facilitant la visualisation spatiale des données de suivi.</p>
-        <a href="#">Voir le rapport</a>
-      </div>
-
-      <div class="project">
-        <h3>🧮 SQL – Analyse exploratoire des données M&E</h3>
-        <p>Extraction et nettoyage des données issues de plusieurs bases pour créer des tableaux de bord de performance régionale.</p>
-        <a href="#">Explorer le code SQL</a>
-      </div>
-
-      <div class="project">
-        <h3>📊 Tableau – Analyse comparative des profils NEETs</h3>
-        <p>Dashboard interactif permettant de comparer quatre profils de jeunes NEETs et d’identifier les priorités d’intervention.</p>
-        <a href="#">Voir le tableau</a>
-      </div>
-    </div>
+    <p>Je suis analyste en Suivi-Évaluation (M&E) et passionné de data analysis. J’accompagne les programmes de développement dans la mise en place de dispositifs de suivi, la visualisation de données et la valorisation des résultats d’impact.</p>
   </section>
 
   <div class="separator"></div>
 
   <section id="skills">
-    <h2>Compétences & outils</h2>
-    <div class="skills">
-      <div class="skill">📘 Suivi & Évaluation (M&E)</div>
-      <div class="skill">📊 Power BI</div>
-      <div class="skill">📈 Excel avancé</div>
-      <div class="skill">🧮 SQL</div>
-      <div class="skill">🐍 Python</div>
-      <div class="skill">📉 Tableau</div>
-      <div class="skill">📊 Looker Studio</div>
-      <div class="skill">📋 Méthodologie d’indicateurs</div>
-      <div class="skill">🌍 Visualisation géospatiale</div>
-      <div class="skill">💡 Suivi de l’innovation</div>
-    </div>
+    <h2>Compétences</h2>
+    <ul>
+      <li>📊 Power BI, Tableau, Looker Studio</li>
+      <li>🐍 Python (Pandas, Matplotlib, Seaborn)</li>
+      <li>🧮 SQL & Excel avancé</li>
+      <li>📈 Suivi-Évaluation et indicateurs de performance</li>
+    </ul>
+  </section>
+
+  <div class="separator"></div>
+
+  <section id="projects">
+    <h2>Projets</h2>
+    <ul>
+      <li><a href="#">Tableau de bord Power BI - Suivi des interventions</a></li>
+      <li><a href="#">Analyse Python - Données d’emploi des jeunes (NEET)</a></li>
+      <li><a href="#">Visualisation Looker Studio - Indicateurs d’impact</a></li>
+    </ul>
   </section>
 
   <div class="separator"></div>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>📧 Email : mohamed.ta@example.com</p>
-    <p>🔗 LinkedIn : <a href="https://linkedin.com/in/tonprofil">linkedin.com/in/tonprofil</a></p>
+    <p>📧 <a href="mailto:mohamed.ta@example.com">mohamed.ta@example.com</a></p>
+    <p>🌐 <a href="https://github.com/tonpseudo">github.com/tonpseudo</a></p>
+    <p>💼 <a href="https://linkedin.com/in/tonlinkedin">linkedin.com/in/tonlinkedin</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Mohamed TA — Portfolio M&E & Data Analysis</p>
+    <p>© 2025 Mohamed TA - Portfolio personnel</p>
   </footer>
 </body>
 </html>
 
+ 
