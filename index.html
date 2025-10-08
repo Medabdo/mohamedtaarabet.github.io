@@ -1,65 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Mohamed TA | M&E & Data Analyst</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Mohamed TA | M&E & Data Analyst</title>
+<style>
+body {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; background:#f9f9f9; color:#333; line-height:1.6;}
+/* NAVBAR */
+nav {display:flex; justify-content:flex-end; align-items:center; background:#003366; padding:1rem 3rem; position:sticky; top:0; z-index:10;}
+nav a {color:white; text-decoration:none; margin-left:2rem; font-weight:500;}
+nav a:hover {text-decoration:underline;}
+/* HEADER */
+header {text-align:center; padding:3rem 1rem; background:#004080; color:white;}
+header img {width:160px; height:160px; border-radius:50%; object-fit:cover; margin-bottom:1rem; border:4px solid white;}
+h1 {margin-bottom:0.5rem;}
+.section {padding:3rem 1rem; text-align:center;}
+.color-band {height:8px; background:linear-gradient(to right,#004080,#00bcd4); margin:0;}
+.skills {display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;}
+.skill {background:#e0f7fa; border-radius:20px; padding:0.6rem 1.2rem; font-weight:500;}
+.projects-container {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; padding:2rem;}
+.project-card {background:white; border-radius:12px; box-shadow:0 3px 8px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.2s;}
+.project-card:hover {transform:translateY(-5px);}
+.project-card img {width:100%; height:150px; object-fit:cover;}
+.project-card h3 {margin:0.8rem 0 0.4rem;}
+.project-card p {font-size:0.9rem; padding:0 1rem 1rem; color:#555;}
+footer {text-align:center; padding:2rem; background:#003366; color:white; margin-top:2rem;}
+</style>
+</head>
+<body>
 
-    /* --- NAVBAR --- */
-    nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      background-color: #003366;
-      padding: 1rem 3rem;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+<nav>
+<a href="#about">À propos</a>
+<a href="#skills">Compétences</a>
+<a href="#projects">Projets</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 2rem;
-      font-weight: 500;
-    }
+<header id="about">
+<img src="https://via.placeholder.com/160" alt="Photo de profil" />
+<h1>Mohamed TA</h1>
+<p>M&E Analyst | Data Analyst | Passionné par le suivi, l’évaluation et l’analyse des données</p>
+</header>
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+<div class="color-band"></div>
 
-    /* --- HEADER --- */
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background-color: #004080;
-      color: white;
-    }
+<section id="skills" class="section">
+<h2>Compétences</h2>
+<div class="skills">
+<div class="skill">Suivi & Évaluation (MEL)</div>
+<div class="skill">Théorie du changement (ToC)</div>
+<div class="skill">Analyse de données</div>
+<div class="skill">Power BI / Tableau / Looker Studio</div>
+<div class="skill">SQL & Python</div>
+<div class="skill">Excel avancé</div>
+<div class="skill">Conception d’indicateurs</div>
+<div class="skill">Visualisation de données</div>
+</div>
+</section>
 
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 4px solid white;
-    }
+<div class="color-band"></div>
 
-    h1 {
-      margin-bottom: 0.5rem;
-    }
+<section id="projects" class="section">
+<h2>Projets</h2>
+<div class="projects-container">
+<!-- Projet 1 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 1">
+<h3>Suivi des interventions</h3>
+<p>Tableau de bord Power BI pour le suivi des activités terrain et la visualisation des indicateurs clés.</p>
+<a href="projet1.html">En savoir plus</a>
+</div>
+<!-- Projet 2 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 2">
+<h3>Analyse des jeunes NEETs</h3>
+<p>Segmentation et visualisation des profils des jeunes sans emploi ni formation au Maroc.</p>
+<a href="projet2.html">En savoir plus</a>
+</div>
+<!-- Projet 3 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 3">
+<h3>Rapport Looker Studio</h3>
+<p>Rapport dynamique pour présenter les résultats d’impact d’un projet environnemental.</p>
+<a href="projet3.html">En savoir plus</a>
+</div>
+<!-- Projet 4 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 4">
+<h3>Tableau de bord Tableau</h3>
+<p>Dashboard interactif pour le suivi des indicateurs financiers et opérationnels.</p>
+<a href="projet4.html">En savoir plus</a>
+</div>
+<!-- Projet 5 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 5">
+<h3>Analyse Python des données</h3>
+<p>Nettoyage, exploration et visualisation des données pour des projets de développement social.</p>
+<a href="projet5.html">En savoir plus</a>
+</div>
+<!-- Projet 6 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 6">
+<h3>Suivi des bénéficiaires</h3>
+<p>Base de données pour suivre les participants à un programme d’inclusion économique.</p>
+<a href="projet6.html">En savoir plus</a>
+</div>
+<!-- Projet 7 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 7">
+<h3>Cartographie des interventions</h3>
+<p>Visualisation géographique des projets et interventions à travers une carte interactive.</p>
+<a href="projet7.html">En savoir plus</a>
+</div>
+<!-- Projet 8 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 8">
+<h3>Indicateurs et suivi MEL</h3>
+<p>Outils pour la collecte, l’analyse et le reporting des indicateurs de programme.</p>
+<a href="projet8.html">En savoir plus</a>
+</div>
+<!-- Projet 9 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 9">
+<h3>Analyse de données socio-économiques</h3>
+<p>Extraction de tendances et insights à partir de données sur l’emploi et l’éducation.</p>
+<a href="projet9.html">En savoir plus</a>
+</div>
+<!-- Projet 10 -->
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="Projet 10">
+<h3>Visualisation interactive</h3>
+<p>Création de dashboards interactifs pour aider la prise de décision et la planification stratégique.</p>
+<a href="projet10.html">En savoir plus</a>
+</div>
 
-    .section {
-      padding: 3rem 1rem;
-      text-align: center;
-    }
+</div>
+</section>
 
-    .color-band {
-      height: 8px;
+<div class="color-band"></div>
+
+<footer id="contact">
+<p>📧 mohamed.ta@example.com | 🌍 Rabat, Maroc</p>
+<p>© 2025 Mohamed TA - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
