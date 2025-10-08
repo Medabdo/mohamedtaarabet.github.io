@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio de Mohamed TAARABET</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Mohamed TA</title>
   <style>
+    /* --- STYLE GLOBAL --- */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
       background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
+    /* --- NAVBAR --- */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0a4d68;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #05bfdb;
+    }
+
+    /* --- EN-TÊTE --- */
     header {
       background-color: #0a4d68;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 120px 20px 60px 20px; /* ajouté du padding top pour compenser la barre */
     }
 
     header img {
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      border: 4px solid white;
+      border: 5px solid white;
       margin-bottom: 20px;
       object-fit: cover;
-    }
-
-    h1 {
-      margin: 10px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     section {
       padding: 40px 20px;
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-      background-color: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 10px;
     }
 
     .separator {
@@ -52,75 +89,34 @@
 
     h2 {
       color: #0a4d68;
-    }
-
-    a {
-      color: #05bfdb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
       text-align: center;
-      padding: 20px;
-      background-color: #0a4d68;
-      color: white;
+      margin-bottom: 30px;
     }
-  </style>
-</head>
 
-<body>
-  <header>
-    <!-- 🔽 Mets ici ton lien vers ta photo de profil -->
-    <img src="photo_profil.jpg" alt="Photo de profil de Mohamed TA">
-    <h1>Mohamed TAARABET</h1>
-    <p>Analyste en Suivi-Évaluation & Data Analyst</p>
-  </header>
+    /* --- CARTES DE PROJET --- */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
 
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Je suis analyste en Suivi-Évaluation (M&E) et passionné de data analysis. J’accompagne les programmes de développement dans la mise en place de dispositifs de suivi, la visualisation de données et la valorisation des résultats d’impact.</p>
-  </section>
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-  <div class="separator"></div>
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
 
-  <section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-      <li>📊 Power BI, Tableau, Looker Studio</li>
-      <li>🐍 Python (Pandas, Matplotlib, Seaborn)</li>
-      <li>🧮 SQL & Excel avancé</li>
-      <li>📈 Suivi-Évaluation et indicateurs de performance</li>
-    </ul>
-  </section>
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
 
-  <div class="separator"></div>
-
-  <section id="projects">
-    <h2>Projets</h2>
-    <ul>
-      <li><a href="#">Tableau de bord Power BI - Suivi des interventions</a></li>
-      <li><a href="#">Analyse Python - Données d’emploi des jeunes (NEET)</a></li>
-      <li><a href="#">Visualisation Looker Studio - Indicateurs d’impact</a></li>
-    </ul>
-  </section>
-
-  <div class="separator"></div>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:mohamed.ta@example.com">mohamed.ta@example.com</a></p>
-    <p>🌐 <a href="https://github.com/tonpseudo">github.com/tonpseudo</a></p>
-    <p>💼 <a href="https://linkedin.com/in/tonlinkedin">linkedin.com/in/tonlinkedin</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Mohamed TA - Portfolio personnel</p>
-  </footer>
-</body>
-</html>
-
- 
+    .project-content {
