@@ -14,36 +14,64 @@
       color: #1f2937;
       line-height: 1.6;
     }
+
+    /* ==== HEADER ==== */
     header {
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 4rem 2rem 3rem;
+      position: relative;
     }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #3b82f6;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
+
     header p {
       font-size: 1.2rem;
       color: #cbd5e1;
+      margin: 0.3rem 0;
     }
+
+    /* ==== SECTION ==== */
     section {
       padding: 3rem 2rem;
       max-width: 1000px;
       margin: auto;
     }
+
     h2 {
       color: #0f172a;
-      border-left: 4px solid #3b82f6;
-      padding-left: 10px;
+      border-left: 5px solid #3b82f6;
+      padding-left: 12px;
     }
+
+    /* ==== COLORED BANDS ==== */
+    .separator {
+      width: 100%;
+      height: 60px;
+      background: linear-gradient(90deg, #3b82f6, #1e40af);
+    }
+
+    /* ==== PROJECTS ==== */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       margin-top: 2rem;
     }
+
     .project {
       background: white;
       padding: 1.5rem;
@@ -51,20 +79,25 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       transition: transform 0.2s ease;
     }
+
     .project:hover {
       transform: translateY(-5px);
     }
+
     .project a {
       text-decoration: none;
       color: #2563eb;
       font-weight: 600;
     }
+
+    /* ==== SKILLS ==== */
     .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1.5rem;
     }
+
     .skill {
       background: #3b82f6;
       color: white;
@@ -72,6 +105,13 @@
       border-radius: 20px;
       font-size: 0.9rem;
     }
+
+    /* ==== CONTACT ==== */
+    #contact p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
     footer {
       background: #0f172a;
       color: white;
@@ -79,6 +119,7 @@
       padding: 1.5rem;
       font-size: 0.9rem;
     }
+
     a {
       color: #2563eb;
     }
@@ -87,10 +128,14 @@
 
 <body>
   <header>
+    <!-- 🔹 Ajoute ici ta vraie photo de profil -->
+    <img src="https://via.placeholder.com/150" alt="Photo de profil Mohamed TA">
     <h1>Mohamed TA</h1>
     <p>Monitoring, Evaluation, Learning & Data Analyst</p>
     <p>Basé à Rabat, Maroc | Passionné par la donnée, l’impact et la visualisation</p>
   </header>
+
+  <div class="separator"></div>
 
   <section id="about">
     <h2>À propos</h2>
@@ -101,6 +146,8 @@
       et en accompagnement stratégique pour renforcer l’efficacité des programmes.
     </p>
   </section>
+
+  <div class="separator"></div>
 
   <section id="projects">
     <h2>Mes projets</h2>
@@ -137,6 +184,8 @@
     </div>
   </section>
 
+  <div class="separator"></div>
+
   <section id="skills">
     <h2>Compétences & outils</h2>
     <div class="skills">
@@ -153,6 +202,8 @@
     </div>
   </section>
 
+  <div class="separator"></div>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>📧 Email : mohamed.ta@example.com</p>
@@ -164,3 +215,4 @@
   </footer>
 </body>
 </html>
+
