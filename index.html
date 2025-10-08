@@ -120,3 +120,154 @@
     }
 
     .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+      color: #0a4d68;
+    }
+
+    .project-content p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .project-content a {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #05bfdb;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-content a:hover {
+      background-color: #0a4d68;
+    }
+
+    /* --- SECTION CONTACT --- */
+    #contact {
+      text-align: center;
+    }
+
+    #contact a {
+      display: inline-block;
+      color: white;
+      background-color: #0a4d68;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    #contact a:hover {
+      background-color: #05bfdb;
+    }
+
+    footer {
+      background-color: #0a4d68;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======== BARRE DE NAVIGATION ======== -->
+  <nav>
+    <div class="logo">Mohamed TA</div>
+    <ul>
+      <li><a href="#top">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======== EN-TÊTE ======== -->
+  <header id="top">
+    <img src="photo_profil.jpg" alt="Photo de profil de Mohamed TA">
+    <h1>Mohamed TA</h1>
+    <p>Analyste en Suivi-Évaluation & Data Analyst</p>
+  </header>
+
+  <!-- ======== À PROPOS ======== -->
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Je suis analyste en Suivi-Évaluation (M&E) et passionné de data analysis. J’accompagne les programmes de développement dans la mise en place de dispositifs de suivi, la visualisation de données et la valorisation des résultats d’impact.</p>
+  </section>
+
+  <div class="separator"></div>
+
+  <!-- ======== PROJETS ======== -->
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="projects-grid">
+      
+      <!-- 🟦 Projet 1 -->
+      <div class="project-card">
+        <img src="images/powerbi_dashboard.jpg" alt="Dashboard Power BI">
+        <div class="project-content">
+          <h3>Tableau de bord Power BI</h3>
+          <p>Un tableau de bord interactif pour suivre les indicateurs d’un programme d’inclusion économique des jeunes.</p>
+          <a href="projet1.html">Voir plus</a>
+        </div>
+      </div>
+
+      <!-- 🟩 Projet 2 -->
+      <div class="project-card">
+        <img src="images/python_analysis.jpg" alt="Analyse Python">
+        <div class="project-content">
+          <h3>Analyse Python des données NEET</h3>
+          <p>Exploration et visualisation des données sur les jeunes sans emploi, éducation ni formation au Maroc.</p>
+          <a href="projet2.html">Voir plus</a>
+        </div>
+      </div>
+
+      <!-- 🟧 Projet 3 -->
+      <div class="project-card">
+        <img src="images/looker_studio.jpg" alt="Looker Studio Report">
+        <div class="project-content">
+          <h3>Rapport Looker Studio</h3>
+          <p>Création d’un rapport dynamique pour présenter les résultats d’impact d’un projet environnemental.</p>
+          <a href="projet3.html">Voir plus</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <!-- ======== CONTACT ======== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Tu peux me contacter pour toute collaboration ou opportunité :</p>
+    <a href="mailto:mohamed.ta@example.com">📧 m'envoyer un email</a>
+  </section>
+
+  <!-- ======== PIED DE PAGE ======== -->
+  <footer>
+    <p>© 2025 Mohamed TA - Portfolio personnel</p>
+  </footer>
+</body>
+</html>
